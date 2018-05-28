@@ -1,0 +1,48 @@
+{% extends 'aetna_apps/base.html'%}
+{% block body %} 
+{% load staticfiles %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <label for="name">First Name</label><br>
+            <input type="text" name="firstname" /><br>
+
+            <label for="name">Last Name</label><br>
+            <input type="text" name="lastname" /><br>
+
+            <label for="name">Email</label><br>
+            <input type="email" name="client-email" /><br>
+
+            <label for="name">Phone</label><br>
+            <input type="text" name="client-phone" /><br>
+
+            <label for="name">Address</label><br>
+            <input type="text" name="client-address" /><br>
+
+            <label for="name">City</label><br>
+            <input type="text" name="client-city" /><br>
+
+            <label for="name">State</label><br>
+            <input type="text" name="client-state" /><br>
+
+            <label for="name">Zip</label><br>
+            <input type="text" name="client-state" /><br>
+
+
+            <label for="password">Password</label><br>
+            <input type="password" name=client-password><br>
+
+            <label for="password">Password Confirmation</label><br>
+            <input type="password" name=client-password><br>
+
+
+            <button>Member Login</button><br>
+            <span>Not a member?</span>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

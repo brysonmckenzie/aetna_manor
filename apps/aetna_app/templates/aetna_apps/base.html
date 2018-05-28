@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load staticfiles%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aetna Manor Revitalization Program</title>
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'aetna_app/css/style001.css' %}">
+    <link rel="stylesheet" href="{% static 'aetna_app/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'aetna_app/css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'aetna_app/javascript/script.js' %}">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <body>
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8 head center">
+                        <h1 class="center">aetna manor revitalization program</h1>
+                    </div>
+                    <div class="col-sm-3 head center">
+                        <p class="center">"rebuild your community"</p>
+                    </div>
+                    <div class="col-sm-1 head">
+                        <img class="center img d-none d-sm-block" src="{% static 'aetna_app/images/gary-seal.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- <div class="nav">
+            <ul class="in-nav" >
+                <li>home</li>
+                <li>history</li>
+                <li>accomplishments</li>
+                <li>coming soon</li>
+                <li>communities</li>
+                <li>donations</li>
+            </ul>
+        </div> -->
+        <!-- 
+        <div class="topnav" id="myTopnav">
+            <a href="" class="active">Home</a>
+            <a href="">history</a>
+            <a href="">accomplishments</a>
+            <a href="">coming soon</a>
+            <a href="">communities</a>
+            <a href="">donations</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div> -->
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Enrollments</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">New Member</a>
+                    <a class="dropdown-item" href="#">Volunteers</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Community</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Downtown Aetna Remix</a>
+                    <a class="dropdown-item" href="#">Scheduled Events</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Accomplishments</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Our Accomplishments</a>
+                    <a class="dropdown-item" href="#">Documents</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+        </ul>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script> {%block body%}{% endblock %}
+
+        <footer>
+            <span class="text-center align-middle">six eleven web design &#169;</h1>
+        </footer>
+    </body>
+
+
+</html>
