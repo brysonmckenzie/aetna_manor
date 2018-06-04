@@ -106,10 +106,3 @@ footer>span {
     display:flex;justify-content:center;align-items:center;
 
 }
-.member-content{
-    background-color: yellow;
-    width: 300px;
-    height:400px;
-    padding: 30px;
-    margin-top:100px;
-}
