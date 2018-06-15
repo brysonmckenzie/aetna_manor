@@ -1,0 +1,67 @@
+/*
+    Bootstrap 4 Registration Form Example by FreeMarkup.com
+    freemarkup.com | @freemarkup
+    Free for personal and commercial use under the CCA 4.0 International license (freemarkup.com/license)
+*/
+body { background:#ffffff; font-family:'Open Sans', sans-serif; font-weight:400; font-size: 15px; color:#666666; line-height:24px; letter-spacing:0.01em;}
+
+.form-block-bg { 
+width:100%; height:100%; float:left; text-align:center; 
+background: #d84b06;
+background: -moz-linear-gradient(left, #d84b06 0%, #4226d0 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, #d84b06), color-stop(100%, #4226d0));
+background: -webkit-linear-gradient(left, #d84b06 0%, #4226d0 100%);
+background: -o-linear-gradient(left, #d84b06 0%, #4226d0 100%);
+background: -ms-linear-gradient(left, #d84b06 0%, #4226d0 100%);
+background: linear-gradient(to right, #d84b06 0%, #4226d0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d84b06', endColorstr='#4226d0', GradientType=1 ); 
+overflow:auto; overflow-x:hidden; position:fixed; top:0; left:0;
+}
+.form-block-bg .container { width:100%; max-width:1200px; margin:0 auto; padding:0 30px;}
+.form-block-bg .outer-bg { width:100%; height:100%; float:none; display:table; margin:0 auto;}
+.form-block-bg .inner-bg { width:100%; height:100%; float:none; display:table-cell; vertical-align:middle; padding:30px 0;}
+
+@media only screen and (max-width: 767px) {
+.form-block-bg .container { max-width:540px; padding:0 20px;}
+}
+
+.form-block { width:100%; max-width:400px; float:none; display:inline-block; vertical-align:top; background:#ffffff; border-radius:6px; box-shadow:rgba(0, 0, 0, .20) 0 0 65px;}
+.form-block h2 { width:100%; float:left; font-weight:600; font-size:20px; color:#4226d0; line-height:24px; text-transform:uppercase; background:#f0f2f5; border-bottom:1px solid #bfc5d1; border-radius:6px 6px 0 0; padding:25px 30px 23px 30px;}
+
+@media only screen and (max-width: 767px) {
+.form-block h2 { padding:25px 25px 23px 25px;}
+}
+
+
+.form-block textarea:focus, .form-block input[type="text"]:focus, .form-block input[type="password"]:focus, 
+.form-block input[type="datetime"]:focus, .form-block input[type="datetime-local"]:focus, .form-block input[type="date"]:focus, .form-block input[type="month"]:focus, .form-block input[type="time"]:focus, .form-block input[type="week"]:focus, .form-block input[type="number"]:focus, .form-block input[type="email"]:focus, .form-block input[type="url"]:focus, .form-block input[type="search"]:focus, .form-block input[type="tel"]:focus, .form-block input[type="color"]:focus, .form-block .uneditable-input:focus { outline:0; border-radius:3px; border-color:#55b1f2; background:none;}
+
+.form-block .input { width:100%; height:45px; float:left; font-family:'Open Sans', sans-serif; font-size:14px; color:#222222; line-height:18px; letter-spacing:0.01em; text-transform:none; background:none; border:none; border-radius:0; outline:none; position:relative; box-shadow:none; box-shadow:none; padding:10px 15px; margin:0;}
+.form-block :placeholder { color:#98a1b2;}
+.form-block ::-webkit-input-placeholder { color:#98a1b2;}
+.form-block input::-moz-placeholder { color:#98a1b2;}
+.form-block ::-moz-placeholder { color:#98a1b2;}
+.form-block :-ms-input-placeholder { color:#98a1b2;}
+
+.form-block label { width:95px; height:45px; float:left; font-size:14px; font-family:'Open Sans', sans-serif; font-weight:600; border-right:1px solid #b8becc; color:#666666; line-height:45px; text-align:left; padding:0 0 0 12px; margin:0 0 0 -95px;}
+
+.form-block .btn { width:100%; height:45px; float:none; display:inline-block; font-family:'Open Sans', sans-serif; font-weight:400; font-size:14px; color:#ffffff; line-height:43px; letter-spacing:0.01em; text-align:center; text-decoration:none; text-transform:none; text-shadow:rgba(0, 0, 0, 0.2) 0 1px 1px; white-space:normal; vertical-align:middle; text-transform:none; background:#4226d0; border:none; filter:0; border-radius:30px; position:relative; cursor:pointer; padding:0 20px; margin:0;}
+.form-block .btn:hover, .form-block .btn:focus, .form-block .btn:active, .form-block .btn:active:focus, .form-block .btn.active:focus { color:#ffffff; text-decoration:none; background:#d84b06; box-shadow:none;}
+.form-block .btn.disabled, .form-block .btn[disabled], .form-block fieldset[disabled] .btn { cursor:not-allowed; filter:alpha(opacity=65); -webkit-box-shadow: none; box-shadow:none; opacity:.65;}
+.form-block a.btn.disabled, .form-block fieldset[disabled] a.btn { pointer-events:none;}
+.form-block .btn-out { width:95px; float:none; display:inline-block; vertical-align:middle; margin:0 -2px 0 -95px;}
+
+.form-block .form-content { width:100%; float:left; padding:40px;}
+.form-block .form-content ul { width:100%; float:left; list-style:none; padding:0 0 20px 0; margin:0;}
+.form-block .form-content ul li { width:100%; float:left; list-style:none; padding:0 0 20px 0; margin:0;}
+.form-block .form-content ul li:last-child { padding:0;}
+.form-block .form-content ul li .input-bg { width:100%; float:left; border:1px solid #b8becc; border-radius:4px; box-shadow:inset rgba(0, 0, 0, 0.090) 0 0 10px; padding:0 0 0 95px;}
+.form-block .form-content ul li .input-bg.error { border-color:#f25555;}
+.form-block .form-content ul li .input-bg.error label { color:#f25555; border-right-color:#f25555;} 
+.form-block .form-content p { width:100%; float:none; display:inline-block; vertical-align:middle; font-size:14px; color:#b2b9c5; line-height:16px; text-align:left; padding:0 100px 0 2px; margin:0 -3px;}
+.form-block .form-content p a { color:#292c33; cursor:pointer;}
+.form-block .form-content p a:hover { color:#d84b06;}
+
+@media only screen and (max-width: 767px) {
+.form-block .form-content { padding:25px;}
+}

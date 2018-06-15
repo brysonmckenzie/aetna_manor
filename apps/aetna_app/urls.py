@@ -11,5 +11,5 @@ urlpatterns = [
     url(r'^members$', views.members),
     url(r'^volunteers$', views.volunteers),
     url(r'^documents$', views.documents),
-    url(r'^member_registration$', views.registration),
+    url(r'^m-registration$', views.registration),
 ]

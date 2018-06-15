@@ -1,37 +1,62 @@
-{% extends 'aetna_apps/base.html'%} {% block body %} {% load staticfiles %}
-<style>
-    body{
-        background: orange;
-    }
-</style>
+<!doctype html>
+<!--
+    Bootstrap 4 Login Form Template by FreeMarkup.com
+    freemarkup.com | @freemarkup
+    Free for personal and commercial use under the CCA 4.0 International license (freemarkup.com/license)
+-->
+<html lang="en">
+<head>
+        {% load staticfiles %}
 
-
-
-<div class="container" style="background: white;">
-
-    <div class="row">
-
-        <div class="col-sm-12 ">
-            <div class="member-content">
-
-
-                <form>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">User Name </label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Password</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                    </div>
-                </form>
-
-                <button>Member Login</button>
-                <br>
-                <span><a href="/member_registration">Not a member?</a></span>
-            </div>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-touch-fullscreen" content="YES">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Bootstrap 4 Login Form Template</title>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!-- <link href="{% static 'aetna_app/css/boostrap.min.css' %}" rel="stylesheet" type="text/css" /> -->
+<link href="{% static 'aetna_app/css/custom-styles.css' %}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous">
+<!-- html5.js for IE less than 10 -->
+<!--[if lt IE 10]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="form-block-bg">
+  <div class="outer-bg">
+    <div class="inner-bg">
+      <div class="container">
+        <div class="form-block">
+          <form action="#" method="post">
+            <ul>
+              <li class="user">
+                <input name="user" type="text" class="input" onFocus="this.placeholder=''" onBlur="this.placeholder='User Name'" placeholder="User Name" />
+              </li>
+              <li class="email">
+                <input name="email" type="text" class="input" onFocus="this.placeholder=''" onBlur="this.placeholder='Email Address'" placeholder="Email Address" />
+              </li>
+              <li class="password">
+                <input name="password" type="password" class="input" onFocus="this.placeholder=''" onBlur="this.placeholder='Password'" placeholder="Password" />
+              </li>
+            </ul>
+            <div class="btn-out"><a href="#" class="btn">Log In</a></div>
+            <p><a href="#">Back to Home</a> <a href="#">Forgot Password?</a></p>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
 </div>
-
-{% endblock %}
+<script src="{% static 'aetna_app/javascript/popper.min.js' %}"></script>
+<script src="{% static 'aetna_app/javascript/bootstrap.min.js' %}"></script>
+</body>
+</html>
