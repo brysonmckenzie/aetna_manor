@@ -98,7 +98,7 @@
 #contact {
     background: green;
     height: 50px;
-    width: 400px;
+    width: 100%;
     color: orangered;
     display: block;
     text-align: center;

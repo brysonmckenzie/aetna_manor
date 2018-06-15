@@ -1,0 +1,14 @@
+@media screen and (max-width:560px){
+    .main-content{
+        background-color:white;
+        background-image:none;
+        height:450px;
+    }
+    #mission-text{
+        font-size:10px;
+    }
+    #md-content{
+        text-align: center;
+    height:unset;
+    }
+}

@@ -1,21 +1,36 @@
 {% extends 'aetna_apps/base.html'%}{% block body %} {% load staticfiles %}
- <div class="container-fluid">
+<div class="container-fluid">
     <div class="row">
         <div class="main-content col-sm-12">
-
-            <img class="col-sm-2"  style="margin-top: 40px"  src="{% static 'aetna_app/images/logo.png' %}" alt="">
+            <img class="col-sm-2" style="margin-top: 40px" src="{% static 'aetna_app/images/logo.png' %}" alt="">
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-3 main-pics" id="md-1"></div>
-        <div class="col-sm-6 b-content" id="md-content">
-            <h1>Mission Statement</h1>
-            <p style="text-align: center;">The AETNA MANOR REVITALIZATION PROGRAM [A.M.R.P.] strives to develop an action plan for the improvement of the Aetna Manor Community.  The A.M.R.P. will accomplish improvements by working with residents and other resources within the greater Gary, IN area.</p>
-            <a href=""><p id="contact">Contact Us</p></a>
+        <div class="col-sm-3" id="">
+            <img src="{% static 'aetna_app/images/black-girl.png' %}" width="100%" alt="">
         </div>
-        <div class="col-sm-3 main-pics"id="md-2"></div> 
+        <div class="col-sm-6 b-content" id="md-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Mission Statement</h1>
+                </div>
+                <div class="col-sm-12">
+                    <p id="mission-text" style="text-align: center;">The AETNA MANOR REVITALIZATION PROGRAM [A.M.R.P.] strives to develop an action plan for the improvement
+                        of the Aetna Manor Community. The A.M.R.P. will accomplish improvements by working with residents
+                        and other resources within the greater Gary, IN area.</p>
+                </div>
+                <div class="col-sm-12">
+                    <a href="">
+                        <p id="contact">Contact Us</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 main-pics" id="">
+                <img src="{% static 'aetna_app/images/md-2.jpg' %}" width="100%" alt="">
+        </div>
     </div>
-</div> 
+</div>
 
 
 
