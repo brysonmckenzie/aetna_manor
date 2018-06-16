@@ -2,16 +2,20 @@
 <div class="container-fluid">
     <div class="row">
         <div class="main-content col-sm-12">
-            <img class="col-sm-2" style="margin-top: 40px" src="{% static 'aetna_app/images/logo.png' %}" alt="">
+            <div class="d-none d-sm-block d-md-none"  id="welcome">
+                Welcome!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci corporis laudantium eaque veritatis quam velit?
+            </div>
+            <img class="col-sm-2 logo" style="margin-top: 40px; " src="{% static 'aetna_app/images/logo.png' %}" alt="">
         </div>
     </div>
-    <div class="row">
+    <div class="row sec">
         <div class="col-sm-3" id="">
-            <img src="{% static 'aetna_app/images/black-girl.png' %}" width="100%" alt="">
+            <img src="{% static 'aetna_app/images/black-girl.png' %}" width="100%" height="100%" alt="">
         </div>
         <div class="col-sm-6 b-content" id="md-content">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 mission">
                     <h1>Mission Statement</h1>
                 </div>
                 <div class="col-sm-12">
@@ -27,7 +31,7 @@
             </div>
         </div>
         <div class="col-sm-3 main-pics" id="">
-                <img src="{% static 'aetna_app/images/md-2.jpg' %}" width="100%" alt="">
+            <img src="{% static 'aetna_app/images/md-2.jpg' %}" width="100%" height="100%" alt="">
         </div>
     </div>
 </div>
