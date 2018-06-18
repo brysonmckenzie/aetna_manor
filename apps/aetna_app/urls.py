@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^volunteers$', views.volunteers),
     url(r'^documents$', views.documents),
     url(r'^m-registration$', views.registration),
+    url(r'^events$', views.events),
 ]

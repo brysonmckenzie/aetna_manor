@@ -3,6 +3,7 @@
         background-color: white;
         background-image: none;
         height: 450px;
+        border-bottom: unset;
     }
     #mission-text {
         font-size: 10px;
@@ -14,11 +15,15 @@
     .b-content {
         border-image: none;
         border-style: none;
-        border-bottom: orangered 10px solid;
+        /* border-bottom: orangered 10px solid; */
     }
     .logo{
         height:250px;
         
+    }
+    .bd-img{
+        border-bottom: 2px solid green;
+        padding: unset
     }
 
 
