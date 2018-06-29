@@ -42,6 +42,13 @@
     text-align: center;    padding-top: 15px;
 }
 
+.accomplish {
+    font-family: Open sans;
+}
+.accomplish h5{
+    font-size: 24pt;
+}
+
 
 .img {
     display: block;
@@ -58,19 +65,19 @@
     position: relative;
 
 }
-.acc::after{
-   content: '';
-   background-image: url(/static/aetna_app/images/logo.png);
-   background-size: 50%;
-   background-repeat: no-repeat;
-   background-position: center top; 
-   top: 0;
-   bottom: 0;
-   right: 0;
-   left: 0;
-   opacity: 0.5;
-   position: absolute;
-   z-index: 1;
+.acc::after {
+    content: '';
+    background-image: url(/static/aetna_app/images/logo.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
 }
 
 .main-content {
