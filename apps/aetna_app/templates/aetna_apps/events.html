@@ -1,7 +1,35 @@
 {% extends 'aetna_apps/base.html'%} {% block body %} {% load staticfiles %}
 
 <div class="container si">
-    <div class="row">
+        <div class="table-responsive-xl">
+    <table class="table"> 
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th></th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Test</td>
+                <td>Test</td>
+                <td></td>
+                <td></td>
+                <td><button>view event</button></td>
+            </tr>
+            <tr>
+                <td>Test2</td>
+                <td>Test2</td>
+                <td></td>
+                <td></td>
+                <td><button>view event</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <!-- <div class="row">
         <div class="col-sm-12 text-center events-title">
             <h1>Schedule Events</h1>
         </div>
@@ -40,7 +68,7 @@
 
     </div>
 
-</div>
+</div> -->
 </div>
 
 {% endblock %}
