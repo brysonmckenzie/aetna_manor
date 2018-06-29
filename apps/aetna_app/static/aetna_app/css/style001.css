@@ -111,7 +111,8 @@
     background-size: cover;
 }
 .si{
-    height: 500px;
+    min-height: 800px;
+    margin-bottom:50px;
 }
 .events-title{
     margin-bottom:40px;

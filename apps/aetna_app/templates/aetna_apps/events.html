@@ -1,34 +1,52 @@
 {% extends 'aetna_apps/base.html'%} {% block body %} {% load staticfiles %}
 
 <div class="container si">
-        <div class="table-responsive-xl">
-    <table class="table"> 
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Event</th>
-                <th></th>
-                <th>Location</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Test</td>
-                <td>Test</td>
-                <td></td>
-                <td></td>
-                <td><button>view event</button></td>
-            </tr>
-            <tr>
-                <td>Test2</td>
-                <td>Test2</td>
-                <td></td>
-                <td></td>
-                <td><button>view event</button></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+    <div class="row">
+        <div class="col-sm-6 center">
+            <img class="" src="{% static 'aetna_app/images/logo.png' %}" alt="">
+        </div>
+        <div class="col-sm-6" >
+            <img class="vcenter" style="float: right;"  width="400" src="{% static 'aetna_app/images/bg.jpg' %}" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 style="margin-bottom: 20px;">Events</h1>
+        </div>
+    </div>
+    <div class="table-responsive-sm">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th></th>
+                    <th>Location</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td></td>
+                    <td>Lorem, ipsum.</td>
+                    <td>
+                        <button>view event</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Test2</td>
+                    <td>Test2</td>
+                    <td></td>
+                    <td>Lorem, ipsum.</td>
+                    <td>
+                        <button>view event</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <!-- <div class="row">
         <div class="col-sm-12 text-center events-title">
             <h1>Schedule Events</h1>
