@@ -1,7 +1,92 @@
-{% extends 'aetna_apps/base.html'%}
-{% block body %} 
-{% load staticfiles %}
+{% extends 'aetna_apps/base.html'%} {% block body %} {% load staticfiles %}
 
-<!-- ...content here -->
+<div class="container si">
+    <div class="row">
+        <div class="col-sm-12 center">
+            <img class="" src="{% static 'aetna_app/images/logo.png' %}" alt="">
+        </div>
+        <!-- <div class="col-sm-6" >
+            <img class="vcenter" style="float: right;"  width="400" src="{% static 'aetna_app/images/bg.jpg' %}" alt="">
+        </div> -->
+    </div>
+    <div class="row">
+        <div class="col-sm-12" style="margin-top: 30px;">
+            <h1 style="margin-bottom: 20px;">A.M.R.P. Documents</h1>
+        </div>
+    </div>
+    <div class="table-responsive-sm">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Name</th>
+                    <th>Lorem</th>
+                    <th>Ipsum</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Ipsum</td>
+                    <td>Lorem,</td>
+                    <td>
+                        <button>View Document</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Test2</td>
+                    <td>Test2</td>
+                    <td>Ipsum</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>
+                        <button>View Document</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <div class="row">
+        <div class="col-sm-12 text-center events-title">
+            <h1>Schedule Events</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 text-center events-title">Date</div>
+        <div class="col-sm-3 text-center events-title">Event</div>
+        <div class="col-sm-3 text-center events-title">Title</div>
+        <div class="col-sm-3 text-center events-title"></div>
+
+    </div>
+    <div class="row" style="height: 100px;">
+        <div class="col-sm-3 event-content ">
+            <div class="vcenter">
+                {{date}}
+            </div>
+        </div>
+        <div class="col-sm-3 event-content ">
+            <div class="vcenter">
+                {{event}}
+            </div>
+        </div>
+        <div class="col-sm-3 event-content ">
+            <div class="vcenter">
+                {{title}}
+            </div>
+        </div>
+        <div class="col-sm-3 event-content" style="background-color: unset;">
+            <div class="vcenter">
+                <form class="attend" action="">
+                    <button>Attend</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+</div> -->
+</div>
 
 {% endblock %}

@@ -1,7 +1,102 @@
-{% extends 'aetna_apps/base.html'%}
-{% block body %} 
-{% load staticfiles %}
+{% extends 'aetna_apps/base.html'%} {% block body %} {% load staticfiles %}
 
-<!-- ...content here -->
+<style>
+    .box {
+        width: 400px;
+        height: 300px;
+        float: left;
+        margin: 0px 10px 10px 0px
+    }
+    .accomplish hr{
+        border: 0.03em solid ;
+    }
 
+    .box2 {
+        width: 500px;
+        height: 400px;
+        float: right;
+        margin: 0px 0px 10px 10px
+    }
+    .box4 {
+        width: 400px;
+        height: 300px;
+        float: right;
+        margin: 0px 10px 10px 0px
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
+    .cap {
+        font-family: Open sans;
+        font-style: italic;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 16pt;
+    }
+    .para{
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 14pt;
+    }
+    
+</style>
+
+<div class="container acc">
+    <div class="row">
+        <div class="col-sm-12 center">
+            <img src="{% static 'aetna_app/images/logo.png' %}" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 accomplish">
+            <h3 style="margin-top:20px; font-family:'Open Sans', sans-serif;; font-size: 30pt;">Aetna Downtown Remix</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" >
+            <!-- <img src="{% static 'aetna_app/images/bg.jpg'%}" class="box" alt=""> -->
+            <p class="para">In 2000, the residents in Aetna amounted to slightly less that 5,000 persons. And, although we do not know the count today, we do know Aetna spends the majority of its now diversified income outside its community.  Admittedly, we have to because  the products and services are virtually non-existent here.  So, with the very few businesses remaining, we have decided to undertake the task of revitalizing Downtown Aetna!  
+            We know!  We know!  We have heard it all.  The cynics -- and in some cases, realists -- ask,  "What businesses are going to invest there?" Well, there are several reasons. 
+            Location, Location, Location!  We are situated less than one mile east of I-65 and Routes 12 and 20 in Gary, are easily accessible to traffic, and highly visible to train commuters.  And, the debate would be:  "It's been there all the time and the businesses still haven't come!"  True.  Then there's the next reason: 
+            Diversity:  Our town/community is reported comprised of 80% or so Black people and 20% or so White people; a healthy mix of elderly and youth.  Some blocks even boast of 90-95% homeowners -- people who are invested in this town/community.  And, guess what:  If you come to one of our meetings, you'll see our town/community represented as all of us are working TOGETHER!  </p>
+            <img src="{% static 'aetna_app/images/bg.jpg'%}" class="box3" alt=""><p class="para">
+            Profitability:  As any franchisee or entrepreneur would agree, the goal of going into business is PROFIT.  The residents of this town/community has been fattening the coiffures of other communities -- increasing their profitability and expansion.  Just checks the statistics.  Whenever purchases are made and the patron provides his or her zip code -- Bam!  They got cha!  They know where their dollars are coming from!  And, since we've been spending everywhere else, "they" just keep their store everywhere else and make us come to "them".  Stop it, y'all! Bring those dollars home!  
+            Opportunity:  This stretch of 2 blocks running north and south was once the home of a bustling downtown scene.  Its street is wide enough for traffic, and its existing structures and vacant lots are easily readied for demolition or renovation.    
+            And, just in case you are not yet convinced of our value:  Check  out the crime statistics for our town/community.  There is less crime in Aetna than in Miller and Glen Ryan! </p>
+            
+            <hr style="margin-bottom: 30px;">
+            
+
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-sm-12">
+
+            <p style="font-family: 'Open Sans', sans-serif; font-size: 20pt; font-weight:bold;">Since our inception, the following concerns have been and are being satisfactorily addressed:</p>
+            <ol style="font-family: Open sans; font-size: 14pt;">
+                <li>Cutting down and removal of dead/diseased trees from easements;</li>
+                <li>Filling of potholes;</li>
+                <li>Overgrowth of lot at Aetna Elementary School and the re-boarding of its doors and windows;</li>
+                <li>Increased Police patrols;</li>
+                <li>Upkeep of our four (4) parks and our Little League Field;</li>
+                <li>Clearing and cutting of vacant lots;</li>
+                <li>Demolition of abandoned houses;</li>
+                <li>Reduced roaming of unleashed dogs;</li>
+                <li>Installation of speed bumps [temporarily].</li>
+            </ol>
+            <hr>
+
+        </div> -->
+    </div>
+    <!-- <div class="row">
+        <div class="col-sm-12">
+            <img src="{% static 'aetna_app/images/bg.jpg'%}" class="box3" alt="">
+            <p class="cap">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <hr>
+        </div>
+    </div> -->
+</div>
 {% endblock %}

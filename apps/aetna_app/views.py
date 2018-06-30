@@ -35,3 +35,10 @@ def volunteers(request):
 def registration(request):
     
     return render(request, 'aetna_apps/member_signup.html')
+def remix(request):
+    
+    return render(request, 'aetna_apps/remix.html')
+
+def documents(request):
+
+    return render(request, 'aetna_apps/documents.html')

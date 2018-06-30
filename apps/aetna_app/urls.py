@@ -13,4 +13,6 @@ urlpatterns = [
     url(r'^documents$', views.documents),
     url(r'^m-registration$', views.registration),
     url(r'^events$', views.events),
+    url(r'^downtown-remix$', views.remix),
+    url(r'^documents$', views.documents),
 ]
