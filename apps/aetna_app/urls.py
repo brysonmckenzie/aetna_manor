@@ -15,4 +15,5 @@ urlpatterns = [
     url(r'^events$', views.events),
     url(r'^downtown-remix$', views.remix),
     url(r'^documents$', views.documents),
+    url(r'^about$', views.about),
 ]

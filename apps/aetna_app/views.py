@@ -40,5 +40,9 @@ def remix(request):
     return render(request, 'aetna_apps/remix.html')
 
 def documents(request):
-
+    
     return render(request, 'aetna_apps/documents.html')
+
+def about(request):
+
+    return render(request, 'aetna_apps/about.html')

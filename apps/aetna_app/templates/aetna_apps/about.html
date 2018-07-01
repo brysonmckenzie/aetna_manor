@@ -1,0 +1,92 @@
+{% extends 'aetna_apps/base.html'%} {% block body %} {% load staticfiles %}
+
+<style>
+    .box {
+        background: url(/static/aetna_app/images/artay_mayor.jpg);
+        height: 300px;
+        float: left;
+        margin: 0px 10px 10px 0px;
+        /* transform: rotate(90deg) */
+    }
+    .pic{
+        display: block;
+        width: 300px;
+    }
+    .accomplish hr {
+        border: 0.03em solid;
+    }
+
+    .box2 {
+        width: 500px;
+        height: 400px;
+        float: right;
+        margin: 0px 0px 10px 10px
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
+    .cap {
+        font-family: Open sans;
+        font-style: italic;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 16pt;
+
+    }
+</style>
+
+<div class="container acc">
+    <div class="row">
+        <div class="col-sm-12 center">
+            <!-- <img src="{% static 'aetna_app/images/logo.png' %}" alt=""> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 accomplish">
+            <h3 style="font-family:'Open Sans', sans-serif;; font-size: 30pt;">About</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="pic">
+                <img src="{% static 'aetna_app/images/penny.jpg'%}" width="400px" class="" alt=""><br>
+                <span  style="font-weight: bold; font-size: 12pt;">Penny: A.M.R.P. President</span>
+            </div><br>
+            <p style="font-family: 'Open Sans', sans-serif; font-size:16pt;">On the afternoon of Saturday, June 6, 2015, having opened with prayer, approximately 40 Neighbors gathered in
+                the north parking lot of the closed and abandoned Aetna Elementary School to discuss our collective concerns
+                about our Neighborhood. With several items listed, we were able to condense and compartmentalize our concerns
+                into two (2) categories: Appearance and Safety.
+                <br> Not quite settled on whether our efforts would be short- or long-term, we decided it would just be a program:
+                commencing with setting goals and objectives, and culminating with accomplishments. With this in mind, we
+                entertained several names for this Program based on our purpose, and conceded that our current set of circumstances
+                did not lend themselves to our return to the Aetna of yester-year. We stopped looking backward and set our
+                eyes toward into a future vibrancy by revitalizing what remains and starting anew where the potential exists.
+                Then learning that “Aetna” is legally named “Aetna Manor” in City records, we became “AETNA MANOR REVITALIZATION
+                PROGRAM”. </p>
+            <hr>
+        </div>
+    </div>
+    <!-- <div class="row">
+            <div class="col-sm-12">
+                <img src="{% static 'aetna_app/images/acc_work.jpg'%}" class="box2" alt="">
+
+                <p style="font-family: 'Open Sans', sans-serif; font-size: 20pt; font-weight:bold;">
+                <hr>
+
+            </div>
+        </div> -->
+    <!-- <div class="row">
+        <div class="col-sm-12">
+            
+            <img src="{% static 'aetna_app/images/bg.jpg'%}" class="box3" alt="">
+            <span>Penny: A.R.M.P. President</span>
+            <p class="cap">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <hr>
+        </div>
+    </div> -->
+</div>
+{% endblock %}
